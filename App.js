@@ -13,7 +13,7 @@ class App extends Component {
     this.gravaNome = this.gravaNome.bind(this);
   }
 
-  // deixar solvo na pagina 
+  // deixar salvo na pagina 
   async componentDidMount() {
     await AsyncStorage.getItem('name').then((value) => {
       this.setState({ nome: value });
